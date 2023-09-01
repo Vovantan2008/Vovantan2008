@@ -1,0 +1,405 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+
+\title{Bài tập Toán}
+\author{Võ Văn Tần, Hồ Văn Hữu Triết, Nguyễn Thành Nhân}
+\date{August 2023}
+
+\begin{document}
+Nhóm: Hồ Văn Hữu Triết, Nguyễn Thành Nhân, Võ Văn Tần.
+\section{Nguyên lý Dirichlet}
+    \subsection{Bài 1}
+        \textbf{Lời giải.}
+            \\
+            b) Ta nhận thấy rằng mọi số nguyên dương đều có thể biểu diễn được dưới $c.2^k$ với $c,k\in\mathbb{N}$ và $c$ lẻ, từ đó: \\
+            Gọi $n+1$ số nguyên dương đã cho là $a_i=c_i.2^{k_i}, i=\overline{1,n+1}$ $(a_i,c_i,k_i\in\mathbb{N}, a_i\leqslant 2n)$. \\
+            Theo đề ta có với $i=\overline{1,n+1}$ thì $a_i\leqslant 2n$ nên $c_i\leqslant 2n$. Vì trong $2n$ số nguyên dương liên tiếp có đúng $n$ số lẻ mà ta có $n+1$ số đã cho nên theo nguyên lý Dirichlet tồn ít nhất hai số $a_m, a_n$ sao cho $c_m=c_n$. Giả sử $a_m\geqslant a_n$, khi đó $a_m\vdots a_n$. \\
+            Vậy nếu ta lấy ra $n+1$ số từ các số $1,2,\ldots,2n$ thì luôn tìm được hai số chia hết cho nhau.
+            \qed
+    \subsection{Bài 2}
+        \textbf{Lời giải.}
+            Giả sử hình 10-giác lồi đã cho là $A_0A_1\ldots A_9$. \\
+            Không mất tính tổng quát, giả sử đỉnh được gán số $9$ là $A_9$, từ đỉnh $A_9$ theo chiều quay của kim đồng hồ các đỉnh còn lại lần lượt là $A_0,A_1,\ldots,A_8$. \\
+            Khi này "bốn đỉnh kề" đỉnh $A_9$ là $A_0,A_1,A_7,A_8$. \\
+            \textbf{Trường hợp 1.} Nếu một trong $4$ đỉnh $A_0,A_1,A_7,A_8$ được gán các số không bé hơn $5$ thì hiển nhiên ta có được điều phải chứng minh. \\
+            \textbf{Trường hợp 2.} Nếu cả bốn đỉnh $A_0,A_1,A_7,A_8$ chỉ được gán các số là $0,1,2,3,4$. Lúc này tại đỉnh được gán số 8 tồn tại ít nhât "hai đỉnh kề" với nó được gán số không bé hơn 5, do đó trong hai đỉnh đó tồn tại một đỉnh được gán số không bé hơn 6. Khi này hiển nhiên ta thấy điều phải chứng minh. \\
+            Vậy ta luôn có thể tìm được ba đỉnh liên tiếp sao cho tổng của chúng $\geqslant14$.
+        \qed
+    \subsection{Bài 3}
+        \textbf{Lời giải.}
+            Nếu $n+2\geqslant 2n \Leftrightarrow n=1$, dễ thấy ta có điều phải chứng minh. \\
+            Nếu $n+2\leqslant 2n$, khi này nếu trong $n+2$ số đó tồn tại hai số có cùng số dư khi chia cho $2n$ thì hiệu của chúng chia hết cho $2n$; nếu không,ta ghép các số dư khi chia $n+2$ cho $2n$ thành các cặp sao cho tổng của chúng chia hết cho $2n$, khi đó ta được $n+1$ cặp mà ta có $n+2$ số đã cho nên theo nguyên lý Dirichlet tồn tại $\left[\dfrac{n+2}{n+1}\right]+1=2$ số thuộc cùng một cặp, từ đây hiển nhiên ta có điều phải chứng minh.
+            \qed
+    \subsection{Bài 4}
+
+    \subsection{Bài 5}
+        \textbf{Nhận xét.} Diện tích của một tam giác nằm bên trong một hình chữ nhật $2\times 1$ không vượt quá 1.
+        \\
+        \textbf{Lời giải.}
+            Chia hình vuông $10\times 10$ đã cho thành $50$ hình hình chữ nhật $2\times 1$. Khi đó theo nguyên lý Dirichlet tồn tại ít nhất $\left[\dfrac{101}{50}\right]+1=3$ điểm thuộc cùng một hình chữ nhật $2\times 1$. Do đó theo \textbf{Nhận xét} nêu trên ta có điều phải chứng minh. \\
+            Vậy ta luôn có thể tìm được 3 điểm trong số 101 điểm đã cho sao cho chúng tạo thành một tam giác với diện tích không vượt quá 1.
+        \qed
+    \subsection{Bài 6}
+
+    \subsection{Bài 7}
+        \textbf{Lời giải.}
+            Vì các điểm đã cho có tọa độ nguyên nên hoành độ, tung độ và cao độ của một trong các điểm đó chỉ có thể xảy ra hai trường hợp hoặc là số chẵn hoặc là số lẻ, khi đó có $2.2.2=8$ trường hợp có thể xảy ra mà ta có tất cả $9$ điểm nên theo nguyên lý Dirichlet có ít nhất hai điểm thuộc cùng một trường hợp. Giả sử hai điểm đó là $A(x_A,y_A,z_A)$ và $B(x_B,y_B,z_B)$, vì tổng của hai số chẵn là một số chẵn và tổng của hai số lẻ cũng là một số chẵn nên tồn tại một điểm có tọa độ nguyên thuộc đoạn thẳng $AB$ là trung điểm $M\left(\dfrac{x_A+x_B}{2},\dfrac{y_A+y_B}{2},\dfrac{z_A+z_B}{2}\right)$ của đoạn thẳng $AB$. \\
+            Vậy trong các đoạn thẳng nối 9 điểm đã cho, luôn có một đoạn thẳng sao cho bên trong đoạn thẳng đó chứa một điểm có các tọa độ nguyên.
+        \qed
+    \subsection{Bài 8}
+
+    \subsection{Bài 9}
+
+    \subsection{Bài 10}
+
+    \subsection{Bài 11}
+        \textbf{Lời giải.}
+            Gọi $A$ là một điểm bất kì trong số 25 điểm đã. Xét đường tròn $(A)$ bán kính bằng 1. Nếu 24 điểm còn lại đều thuộc $(A)$ thì hiển nhiên ta có điều phải chứng minh. Xét trường hợp có điểm $B$ nằm ngoài $(A)$, khi đó $AB>1$. Xét $(B)$ bán kính bằng 1. \\
+            Giả sử $C$ là một điểm bất kì khác $A$ và $B$. Ta chứng minh $C$ phải thuộc một trong hai đường tròn $(A)$ hoặc $(B)$. \\
+            Thật vậy; giả sử $C$ không thuộc cả $(A)$ và $(B)$ khi đó $AC>1$ và $BC>1$; lại có $AB>1$, nên trong ba điêm $A,B,C$ không có hai điểm nào mà khoảng cách giữa chúng bé hơn 1. (trái với giả thiết) \\
+            Do đó $C$ hoặc thuộc $(A)$ hoặc thuộc $(B)$. Kéo theo 25 điểm đã cho đều thuộc vào hai đường tròn $(A)$ và $(B)$. \\
+            Từ đây theo nguyên lý Dirichlet có ít nhất $\left[\dfrac{25}{2}\right]+1=13$ điểm cùng thuộc một đường tròn. \\
+            Vậy tồn tại một hình tròn bán kính bằng 1 chứa ít nhất 13 điểm trong số 25 điểm đã cho.         
+        \qed
+    \subsection{Bài 12}
+
+    \subsection{Bài 13}
+
+    \subsection{Bài 14}
+
+    \subsection{Bài 15}
+
+    \subsection{Bài 16}
+
+    \subsection{Bài 17}
+
+    \subsection{Bài 18}
+
+    \subsection{Bài 19}
+
+\section{Phương pháp quy nạp}
+    \subsection{Bài 1}
+        \textbf{Lời giải.}
+            Ta chứng minh rằng với $ n\in\mathbb{Z}^+,n\geqslant 2$ thì $A_n=2^{2^n}+1$ có tận cùng bằng 7. \\
+            Với $n=2$ ta có $A_2=2^{2^2}+1=17$ $\Rightarrow$ khẳng định đúng với $n=2$. \\
+            Giả sử khẳng định đã cho đúng với $n=k\geqslant 2$, tức là $A_k=2^{2^k}+1$ có tận cùng là 7. \\
+            Ta cần chứng minh khẳng định đúng với $n=k+1$, tức là chứng minh $A_{k+1}=2^{2^{k+1}}+1$ có tận cùng là 7. \\
+            Thật vậy, với $k\geqslant 2 \Rightarrow k-1\geqslant 1 \Rightarrow 2^{k-1} \text{ chẵn}$, xét biểu thức sau, ta có
+                \[
+                    A_{k+1}-A_k=2^{2^{k+1}}-2^{2^k}=2^{2^{k-1}.2^2}-2^{2^{k-1}.2}=16^{2^{k-1}}-4^{2^{k-1}} \vdots 16+4=20
+                \]
+            $\Rightarrow$  $A_{k+1}-A_k\vdots 10$ \\
+            Suy ra $A_{k+1} \text{ và } A_k$ có hai chữ số tận cùng giống nhau hay $A_{k+1}$ có tận cùng bằng 7.\\
+            Vậy theo nguyên lý quy nạp thì với $ n\in\mathbb{Z}^+,n\geqslant 2$ thì $A_n=2^{2^n}+1$ có tận cùng bằng 7.
+        \qed
+    \subsection{Bài 2}
+        \textbf{Nhận xét.} Với $k\in \mathbb{N}$ thì $S_{k+1}=2S_k(2k+1)$.
+            \begin{proof}
+               Thật vậy, ta có
+                \begin{align*}
+                    S_{k+1}&=(k+1+1)(k+1+2)\ldots(k+1+k-1)(k+1+k)(k+1+k+1)
+                    \\&=(k+2)(k+3)\ldots(k+k)(2k+1)(2k+2)
+                    \\&=2(k+1)(k+2)(k+3)\ldots(k+k)(2k+1)
+                    \\&=2S_k(2k+1)
+                \end{align*}
+            \end{proof}
+        \noindent\textbf{Lời giải.}
+            Với $n=1$, ta có $S_1=1+1  \vdots  2^1$ $\Rightarrow$ khẳng định đúng với $n=1$. \\
+            Giả sử khẳng định đã cho đúng với $n=k\geqslant 1$, tức là $S_k  \vdots  2^k$. \\
+            Ta cần chứng minh khẳng định đúng với $n=k+1$, tức là chứng minh $S_{k+1} \vdots  2^{k+1}$. \\
+            Thật vậy theo \textbf{Nhận xét}, ta có
+                \[
+                    S_{k+1}=2S_k(2k+1) \vdots 2.2^k=2^{k+1}
+                \]
+            Vậy theo nguyên lý quy nạp thì với $n\in \mathbb{N}$ thì $S_n \vdots 2^n$.
+        \qed
+    \subsection{Bài 3}
+
+    \subsection{Bài 4}
+        Cho dãy số $u_n$ được xác định như sau  \(
+                                                    \left\{
+                                                            \begin{aligned}
+                                                                &u_1=1, u_2=3
+                                                                \\&u_{n+2}=2u_{n+1}-u_n+1, n\geqslant 1
+                                                            \end{aligned}
+                                                    \right.
+                                                \)
+        \\\noindent\textbf{Lời giải.}
+            \textit{Ta chứng minh rằng với $n\geqslant 1$ thì $u_n=\dfrac{n(n+1)}{2}$.} \\
+            Với $n=1$, ta có $u_1=1=\dfrac{1.(1+1)}{2}$ $\Rightarrow$ Khẳng định đã cho đúng với $n=1$. \\
+            Với $n=2$, ta có $u_2=3=\dfrac{2.(2+1)}{2}$ $\Rightarrow$ Khẳng định đã cho đúng với $n=2$. \\
+            Giả sử với $n\geqslant 2$, thì khẳng định đúng với $n\geqslant k\geqslant 2$, nghĩa là $u_k=\dfrac{k(k+1)}{2}$. \\
+            Ta cần chứng minh khẳng định đúng với $n=k+1$, tức là chứng minh $u_{k+1}=\dfrac{(k+1)(k+2)}{2}$. \\
+            Thật vậy, ta có
+                \begin{align*}
+                    u_{k+1}&=2u_k-u_{n-1}+1
+                    \\&=2\cdot\frac{k(k+1)}{2}-\frac{(k-1)k}{2}+1
+                    \\&=\frac{(k+1)(k+1)}{2}
+                \end{align*}
+            Vậy theo nguyên lý quy nạp thì với $n\geqslant 1$ thì $u_n=\dfrac{n(n+1)}{2}$.
+            \qed
+            \\
+            Ta có 
+                \begin{align*}
+                    A_n&=4u_nu_{n+2}+1
+                    \\&=4\cdot\frac{n(n+1)}{2}\cdot\frac{(n+2+1)(n+2+2)}{2}+1
+                    \\&=n(n+1)(n+2)(n+3)+1
+                    \\&=n^4+6n^3+11n^2+6n+1
+                    \\&=(n+3n+1)^2
+                \end{align*}
+            Vậy với $n\geqslant 1$ thì $A_n=4u_nu_{n+2}+1$ là số chính phương.
+        \qed
+    \subsection{Bài 5}
+        Cho dãy số $u_n$ được xác định như sau  \(
+                                                    \left\{
+                                                        \begin{aligned}
+                                                            &u_1=u_2=1
+                                                            \\&u_n=\frac{u_{n-1}^2+2}{u_{n-2}}, n\geqslant 3
+                                                        \end{aligned}
+                                                    \right.
+                                                \)
+        \\
+        \textbf{Lời giải.}
+            Ta chứng minh rằng với $n\geqslant 3$ thì $u_n=4u_{n-1}-u_{n-2}$. \\
+            Với $n=3$, ta có $u_3=\dfrac{1^2+2}{1^2}=4.1-1=3$ $\Rightarrow$ Khẳng định đúng với $n=3$. \\
+            Giả sử khẳng định đúng với $n=k\geqslant 3$, tức là $u_k=\dfrac{u_{k-1}^2+2}{u_{k-2}}=4u_{k-1}-u_{k-2}$. \\
+            Ta cần chứng minh khẳng định đúng với $n=k+1$, tức là chứng minh $u_{k+1}=4u_k-u_{k-1}$. \\
+            Thật vậy, theo giả thuyết quy nạp, ta có
+                \begin{align*}
+                    u_{k+1}-(4u_k-u_{k-1})&=\frac{u_k^2+2}{u_{k-1}}-(4u_k-u_{k-1})
+                    =\frac{u_k^2+2-(4u_k-u_{k-1})\cdot u_{k-1}}{u_{k-1}}
+                    \\&=\frac{u_k^2+2-4u_ku_{k-1}+u_{k-1}^2}{u_{k-1}}
+                    =\frac{u_k(u_k-4u_{k-1})+(u_{k-1}^2+2)}{u_{k-1}}
+                    \\&=\frac{u_k\cdot(-u_{k-2})+u_k\cdot u_{k-2}}{u_{k-1}}=\frac{0}{u_{k-1}}=0 
+                    \hspace{0.5cm}\left(\text{Vì }u_k=\dfrac{u_{k-1}^2+2}{u_{k-2}}=4u_{k-1}-u_{k-2}\right)
+                \end{align*}
+                \\
+                Suy ra $u_{k+1}=4u_k-u_{k-1}$ \\
+                Vậy theo nguyên lý quy nạp thì với $n\geqslant 3$ thì $u_n=4u_{n-1}-u_{n-2}$.
+        \qed
+        \\
+        Ta chứng minh rằng mọi số hạng của dãy đã cho là số nguyên. \\
+        Với $n=1$, ta có $u_1=1$ là số nguyên $\Rightarrow$ Khẳng định đúng với $n=1$. \\
+        Với $n=2$, ta có $u_2=1$ là số nguyên $\Rightarrow$ Khẳng định đúng với $n=2$. \\
+        Giả sử khẳng định đúng với $n\geqslant k\geqslant 2$, tức là $u_k$ là số nguyên. \\
+        Ta cần chứng minh khẳng định đúng với $n=k+1$, tức là chứng minh $u_{k+1}$ là số nguyên. \\
+        Thật vậy, ta có 
+            \[
+                u_{k+1}=4u_k-u_{k-1}
+            \]
+        Vì $u_k$ và $u_{k+1}$ là số nguyên mà 4 cũng là số nguyên nên $u_{k+1}$ là số nguyên. \\
+        Vậy theo nguyên lý quy nạp thì mọi số hạng của dãy đã cho là số nguyên.
+    \subsection{Bài 6}
+        \textbf{Lời giải.}
+            Ta chứng minh rằng với $n\in \mathbb{Z}^+$ thì $$S(n)=\frac{1}{1.2.3}+\frac{1}{2.3.4}+\ldots+\frac{1}{n(n+1)(n+1)}=\frac{1}{4}-\frac{1}{2(n+1)(n+2)}$$
+            Với $n=1$ ta có $S(1)=\dfrac{1}{1.2.3}=\dfrac{1}{4}-\dfrac{1}{2(1+1)(1+2)}=\dfrac{1}{6}$ $\Rightarrow$ Đẳng thức đúng với $n=1$. \\
+            Giả sử đẳng thức đúng với $n=k\geqslant 1$, tức là $S(k)=\dfrac{1}{4}-\dfrac{1}{2(k+1)(k+2)}$. \\
+            Ta cần chứng minh đẳng thức đúng với $n=k+1$, tức là chứng minh 
+                $$S(k+1)=\dfrac{1}{4}-\dfrac{1}{2(k+1+1)(k+1+2)}=\dfrac{1}{4}-\dfrac{1}{2(k+2)(k+3)}$$
+            Thật vậy, ta có
+            \begin{align*}
+                S(k+1)&=S(k)+\frac{1}{(k+1)(k+1+1)(k+1+2)}
+                      \\&=\frac{1}{4}-\frac{1}{2(k+1)(k+2)} + \frac{1}{(k+1)(k+2)(k+3)}
+                      \\&=\frac{1}{4}-\frac{1}{(k+1)(k+2)}\left ( \frac{1}{2}-\frac{1}{k+3}\right)
+                      \\&=\frac{1}{4}-\frac{1}{(k+1)(k+2)}\cdot\frac{k+1}{2(k+3)}
+                      \\&=\frac{1}{4}-\frac{1}{2(k+2)(k+3)}
+            \end{align*}
+        Vậy theo nguyên lý quy nạp thì với $n\in \mathbb{Z}^+$ thì $S(n)=\dfrac{1}{4}-\dfrac{1}{2(n+1)(n+2)}$.
+        \qed
+    \subsection{Bài 7}
+        \textbf{Lời giải.}
+            Nếu $n\geqslant 4$ là số chẵn, ta xét $n=2k$ số có tổng bằng 1 là $x_1,x_2,\ldots,x_{2k}$, theo đề ta có
+                \begin{align*}
+                    \frac{1}{4} &=\left(\frac{x_1+x_2+\ldots+x_{2k}}{2}\right)^2\\&=\left[\frac{(x_1+x_3+\ldots+x_{2k-1})+(x_2+x_4+\ldots+x_{2k})}{2}\right]^2
+                    \\&\geqslant (x_1+x_3+\ldots+x_{2k-1})(x_2+x_4+\ldots+x_{2k}) \tag{Theo bất đẳng thức AM-GM}
+                    \\&=\left(\sum_{i=1}^kx_{2i-1}\right)\left(\sum_{j=1}^kx_{2j}\right)
+                    \\&=\sum_{i=1}^k\sum_{j=1}^kx_{2i-1}x_{2j}
+                    \\&\geqslant x_1x_2+x_2x_3+\ldots+x_{2k-1}x_{2k}
+                \end{align*}
+            Suy ra $$x_1x_2+x_2x_3+\ldots+x_{n-1}x_n\leqslant \frac{1}{4}$$
+            Nếu $n\geqslant 4$ là số lẻ, ta xét $n+1=2k$ số có tổng bằng 1 là $x_1,x_2,\ldots,x_{2k-1}$ và $x_{2k}=0$; thì chứng minh tương tự như trên ta cũng có
+                $$x_1x_2+x_2x_3+\ldots+x_{n-1}x_n\leqslant \frac{1}{4}$$
+            Vậy với $n$ số không có tổng bằng 1 thì $x_1x_2+x_2x_3+\ldots+x_{n-1}x_n\leqslant \dfrac{1}{4}$.
+        \qed
+    \subsection{Bài 8}
+        \textbf{Lời giải.}
+            Với $n=1$, ta có $x_1=1$ nên $x_1\geqslant x_1 \Leftrightarrow x_1\geqslant 1$ $\Rightarrow$ Bất đẳng thức đã cho đúng với $n=1$. \\
+            Giả sử bất đẳng thức đã cho đúng với $n=k\geqslant 1$, tức là với $k$ số không âm $x_1,x_2,\ldots,x_k$ có tích bằng 1, ta có
+                \[
+                    x_1+x_2+\ldots+x_k\geqslant k
+                \]
+            Ta cần chứng minh bất đẳng thức đã cho đúng với $n=k+1$, tức là với $k+1$ số không âm $x_1,x_2,\ldots,x_k,x_{k+1}$ có tích bằng 1, ta có
+                \[
+                    x_1+x_2+\ldots+x_k+x_{k+1}\geqslant k+1
+                \]
+            Thật vậy, xét $k+1$ số không âm có tích bằng 1 là $x_1x_2\ldots x_kx_{k+1}=1$. Hiển nhiên trong $k+1$ số này tồn tại ít nhất một số không lớn hơn 1 và một số không bé hơn 1. \\
+            Không mất tính tổng quát, giả sử $x_k\leqslant 1$ và $x_{k+1}\geqslant 1$. Khi đó 
+                \begin{align}
+                    (1-x_k)(x_{k+1}-1)\geqslant 0 \Leftrightarrow x_k+x_{k+1}\geqslant x_kx_{k+1}+1\tag{1}
+                \end{align}
+            Với $k$ số không âm $x_1,x_2,\ldots,x_{k-1}$ và $x_kx_{k+1}$, có tích bằng 1, theo giả thuyết quy nạp suy ra ta có
+                \begin{align}
+                    x_1+x_2+\ldots+x_{k-1}+x_kx_{k+1}+1\geqslant k+1 \tag{2}
+                \end{align}
+            Từ $(1)$ và $(2)$ suy ra
+                \[
+                    x_1+x_2+\ldots+x_k+x_{k+1}\geqslant k+1
+                \]
+            Vậy theo nguyên lý quy nạp thì với n số không âm có tích bằng 1, ta luôn có $x_1+x_2+\ldots+x_n\geqslant n$.
+        \qed
+    \subsection{Bài 9}
+        \textbf{Lời giải.}
+            Với $n=2$, ta có $(1+x)^2\geqslant 1+2x \Leftrightarrow x^2\geqslant0$ (luôn đúng) $\Rightarrow$ Bất đẳng thức đã cho đúng với $n=2$.\\
+            Giả sử bất đẳng thức đã cho đúng với $n=k\geqslant2$, tức là $(1+x)^k\geqslant 1+kx$.\\
+            Ta chứng minh nó đúng với $n=k+1$, tức là chứng minh
+                $$(1+x)^{k+1}\geqslant 1+(k+1)x$$
+            Thật vậy, với $nx^2\geqslant0$ ta có
+            \[
+                (1+x)^{k+1}=(1+x)^k.(1+x)\geqslant(1+kx)(1+x)=[1+(k+1)x]+kx^2\geqslant1+(k+1)x
+            \]
+            Vậy theo nguyên lý quy nạp thì với $x\neq 0,x>-1$ và số tự nhiên $n\geqslant2$ thì $(1+x)^n\geqslant 1+nx$.
+        \qed
+    \subsection{Bài 10}
+
+\section{Bài tập Tài liệu giáo khoa chuyên toán (Bài 13-20, trang 30)}
+    \subsection{Bài 13}
+        a) "Điều kiện cần để một số nguyên dương biểu diễn được thành tổng của hai bình phương là số đó phải có dạng $4k+1$". \\
+        b) "Điều kiện cần để hai số nguyên dương $m,n$ thỏa $m^2+n^2$ là một số chính phương là $mn$ chia hết cho $12$".
+    
+    \subsection{Bài 14}
+        \textbf{Lời giải.} 
+            Giả sử nếu $x\neq -1, y\neq -1$ thì $x+y+xy=-1$. \\
+            Ta có
+                \begin{align*}
+                    &x+y+xy=-1
+                    \\ \Leftrightarrow& (x+1)+(y+xy)=0
+                    \\ \Leftrightarrow& (x+1)+y(x+1)=0
+                    \\ \Leftrightarrow& (x+1)(y+1)=0
+                    \\ \Leftrightarrow& 
+                                            \left[
+                                                \begin{matrix}
+                                                    x+1&=0 &\\
+                                                    y+1&=0 &\\
+                                                \end{matrix}
+                                            \right.\\
+                    \Leftrightarrow& 
+                                            \left[
+                                                \begin{matrix}
+                                                    x&=-1 &\\
+                                                    y&=-1 &\\
+                                                \end{matrix}
+                                            \right.
+                    \text{(mâu thuẫn)}
+                \end{align*}
+            Vậy nếu $x\neq -1, y\neq -1$ thì $x+y+xy\neq -1$.
+        \qed
+    \subsection{Bài 15}
+        \textbf{Bổ đề.} Một số nguyên tố có dạng $4k+3$ luôn có một ước nguyên tố có dạng $4k+3$.
+            \begin{proof}
+                Gọi $p$ là một số nguyên tố có dạng $4k+3$ $\Rightarrow$ $p$ lẻ. \\
+                Giả sử $p=p_1^{\alpha_1}p_2^{\alpha_2}\ldots p_n^{\alpha_n}$ \hspace{0.5cm} $(p_i \text{ là các số nguyên tố lẻ, } i=\overline{1,n})$. \\
+                Vì $p$ lẻ nên nếu
+                    \(
+                        p_i\equiv 1 \pmod{4}, i=\overline{1,n} \Rightarrow p\equiv 0 \pmod{4} \hspace{0.5cm} \text{(mâu thuẫn)}
+                    \)
+                \\
+                Do đó $p$ tồn tại ít nhất một ước nguyên tố có dạng $4k+3$. \\
+                Vậy một số nguyên tố có dạng $4k+3$ luôn có một ước nguyên tố có dạng $4k+3$.
+            \end{proof}
+        \noindent\textbf{Lời giải.}
+            Giả sử tồn tại hữu hạn các số nguyên tố có dạng $4k+3$. Gọi các số nguyên tố đó là $p_1\leqslant p_2\leqslant\ldots\leqslant p_n$. \\
+            Xét số $P=4p_1p_2\ldots p_n+3$ có dạng $4k+3$. \\
+            Theo \textbf{Bổ đề} trên $P$ có một ước nguyên tố có dạng $4k+3$, gọi ước đó là $q$. \\
+            Ta lại thấy rằng $P\not\vdots p_i, i=\overline{1,n}$ nên $q\not\in \{p_1,p_2,\ldots,p_n\}$. \hspace{0.5cm} (Trái với giả thiết) \\
+            Vậy có vô số nguyên tố có dạng $4k+3$.
+        \qed
+    \subsection{Bài 16}
+        \textbf{Lời giải.}
+            Giả sử với $p$ là số nguyên tố thì $\sqrt{p}$ là số hữu tỷ.\\
+            Đặt $\sqrt{p}=\dfrac{a}{b}, \hspace{0.5cm}(a,b\in \mathbb{Z};b\neq 0;(a,b)=1)$\\
+            Suy ra
+                \begin{align}
+                    a^2=pb^2 \Rightarrow a \vdots  p \Rightarrow a=kp \hspace{0.5cm} (k\in \mathbb{Z}) 
+                \end{align}
+            \\
+            Từ đó với $a^2=pb^2$ và $a=kp$, ta có
+                \begin{align}
+                    k^2p^2=pb^2\Leftrightarrow b^2=pk^2 \Rightarrow b \vdots  p
+                \end{align} 
+            Từ $(1)$ và $(2)$ suy ra $p$ là ước chung của $a$ và $b$. \\
+            Lại có $(a,b)=1$ nên $p=1$ (vô lý, vì $p$ là số nguyên tố) \\
+            Vậy với $p$ là số nguyên tố thì $\sqrt{p}$ là số vô tỷ.
+        \qed
+    \subsection{Bài 17}
+        \textbf{Lời giải.}
+        Đặt $S_n=1.2.3+2.3.4+\ldots+n(n+1)(n+2)$. \\
+        Ta cần chứng minh $S_n=\dfrac{n(n+1)(n+2)(n+3)}{4}$. \\
+        Với $n=1$ ta có $S_1=1.2.3=\dfrac{1(1+1)(1+2)(1+3)}{4}=6$ $\Rightarrow$ Đẳng thức đúng với $n=1$. \\
+        Giả sử đẳng thức đúng với $n=k\geqslant1$, tức là
+        $S_k=\dfrac{k(k+1)(k+2)(k+3)}{4}$ \\
+        Ta cần chứng minh đẳng thức đúng với $n=k+1$, tức là chứng minh
+        $$S_{k+1}=\frac{(k+1)(k+1+1)(k+1+2)(k+1+3)}{4}=\frac{(k+1)(k+2)(k+3)(k+4)}{4}$$
+        Thật vậy, theo giả thuyết quy nạp ta có
+        \begin{align*}
+            S_{k+1}&=S_k+(k+1)(k+2)(k+3)
+            \\&=\frac{k(k+1)(k+2)(k+3)}{4}+(k+1)(k+2)(k+3)
+            \\&=(k+1)(k+2)(k+3)\left(\frac{k}{4}+1\right)
+            \\&=\frac{(k+1)(k+2)(k+3)(k+4)}{4}
+        \end{align*}
+        Vậy $1.2.3+2.3.4+\ldots+n(n+1)(n+2)=\dfrac{n(n+1)(n+2)(n+3)}{4}$
+        \qed
+    \subsection{Bài 18}
+        \textbf{Lời giải.}
+        Với $n=1$, ta có $4^{1+1}+5^{2.1-1}=21 \vdots  21$ $\Rightarrow$ Khẳng định  đúng với $n=1$. \\
+        Giả sử khẳng định đã cho đúng với $n=k\geqslant 1$, tức là $4^{k+1}+5^{2k-1} \vdots  21$ \\
+        Ta chứng minh khẳng định đúng với $n=k+1$, tức là chứng minh
+            $$4^{k+1+1}+5^{2(k+1)-1} \vdots  21 \Leftrightarrow 4^{k+2}+5^{2k+1} \vdots  21$$
+        Thật vậy, ta có 
+        $$4^{k+2}+5^{2k+1}=16.4^k+5.25^k\equiv(-5).4^k+5.4^k\equiv 0 \pmod{21}$$
+        Vậy theo nguyên lý quy nạp thì với $n\in \mathbb{N}^{*}$ thì $4^{n+1}+5^{2n-1} \vdots  21$.
+        \qed
+    \subsection{Bài 19}
+        \textbf{Lời giải.}
+        Với $n=1$, ta có $3^{2.1+1}+40.1-67=0 \vdots  64$ $\Rightarrow$ Khẳng định  đúng với $n=1$. \\
+        Giả sử khẳng định đã cho đúng với $n=k\geqslant 1$, tức là $3^{2k+1}+40k-67 \vdots  64$ \\
+        Ta chứng minh khẳng định đúng với $n=k+1$, tức là chứng minh
+        $$3^{2(k+1)+1}+40(k+1)-67 \vdots  64\Leftrightarrow 3^{2k+3}+40k-27 \vdots  64$$
+        Thật vậy, ta có 
+            \begin{align*}
+                &3^{2k+1}+40k-67 \vdots  64\hspace{0.5cm}\text{ (giả thiết quy nạp)}
+                \\ \Rightarrow &9(3^{2k+1}+40k-67) \vdots  64
+                \\ \Rightarrow &3^{2k+3}+360k-603 \vdots  64
+                \\ \Rightarrow &3^{2k+3}+40k-27 \vdots  64\hspace{0.5cm}\text{ (Vì 360 chia 64 dư 40 và 603 chia 64 dư 27)}
+            \end{align*}
+        Vậy theo nguyên lý quy nạp thì với $n\in \mathbb{N}^{*}$ thì $3^{2n+1}+40n-67 \vdots  64$.
+        \qed
+    \subsection{Bài 20}
+        \textbf{Lời giải.}
+            Với $n=3$ ta có $0<x_1\leqslant x_2\leqslant x_3$, khi đó
+                \[
+                    \sum_{i=1}^3\frac{x_i}{x_{i+1}}-\sum_{i=1}^3\frac{x_{i+1}}{x_i}=\frac{(x_3-x_2)(x_3-x_1)(x_2-x_1)}{x_1x_2x_3}\geqslant 0 \\
+                    \Leftrightarrow \sum_{i=1}^3\frac{x_i}{x_{i+1}}\geqslant \sum_{i=1}^3\frac{x_{i+1}}{x_i}
+                \]
+            $\Rightarrow$ Bất đẳng thức đã cho đúng với $n=3$. \\
+            Giả sử bất đẳng thức đã cho đúng với $n=k\geqslant 3$, tức là
+                \begin{align}
+                    \sum_{i=1}^k\frac{x_i}{x_{i+1}}\geqslant \sum_{i=1}^k\frac{x_{i+1}}{x_i} \tag{1}
+                \end{align}
+            Ta cần chứng minh bất đẳng thức đã cho đúng với $n=k+1$, tức là chứng minh
+                \[
+                    \sum_{i=1}^{k+1}\frac{x_i}{x_{i+1}}\geqslant \sum_{i=1}^{k+1}\frac{x_{i+1}}{x_i}
+                \]
+            Thật vậy, vì bất đẳng thức đã cho đúng với $n=3$ nên với 3 số $0<x_1\leqslant x_k\leqslant x_{k+1}$, ta được
+                \begin{align}
+                     \frac{x_1}{x_k}+\frac{x_k}{x_{k+1}}+\frac{x_{k+1}}{x_1}\geqslant \frac{x_k}{x_1}+\frac{x_{k+1}}{x_k}+\frac{x_1}{x_{k+1}} \tag{2}
+                \end{align}
+            Lấy $(1)$ cộng $(2)$ vế theo vế ta thu được
+                \[
+                    \sum_{i=1}^{k+1}\frac{x_i}{x_{i+1}}\geqslant \sum_{i=1}^{k+1}\frac{x_{i+1}}{x_i}
+                \]
+        Vậy theo nguyên lý quy nạp thì với $n\geqslant 3$ thì $$\sum_{i=1}^n\frac{x_i}{x_{i+1}}\geqslant \sum_{i=1}^n\frac{x_{i+1}}{x_i}$$
+        \qed
+\end{document}
